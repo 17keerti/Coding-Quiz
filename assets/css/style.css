@@ -29,11 +29,30 @@ h1 {
   top: 4px;
 }
 
-.option {
-  font-size: 20px ;
-  
+#viewHighScore {
+  background-color: lightblue;
 }
 
+.option {
+  font-size: 20px ;
+  margin: 6px;
+}
+
+#goback {
+  font: 10px;
+  margin: 10px ;
+  background-color: lightblue;
+}
+
+#unorderedList {
+  list-style-type: decimal;
+  list-style-position: inside;
+  margin: 10px;
+}
+
+#listItem {
+  margin: 10px;
+}
 
 #startButton {
   height:25px;

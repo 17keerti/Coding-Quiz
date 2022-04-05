@@ -191,7 +191,8 @@ function highScore() {
   for (var i = 0; i < finalScore.length; i++) {
     console.log(finalScore[i]);
     var listitem = document.createElement('li');
-    listitem.textContent = "Initials:  " + finalScore[i].initials + "  score: " + finalScore[i].score;
+    listitem.setAttribute("id","listItem");
+    listitem.textContent =  finalScore[i].initials + "  score: " + finalScore[i].score;
     unorderedList.appendChild(listitem);
   }
 

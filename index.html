@@ -10,21 +10,21 @@
 </head>
 
 <body>
-  <div class="highScore">View HighScores</div>
-  <div id="highScoreDisplay"></div>
-  <div class="timer">Timer:</div>
+  <button type="button" id="viewHighScore">View HighScores</button>
   <div id="time_left"></div>
-  <div class="main-container">
+  <div id="mainContainer">
     <h1>Coding Quiz Challenge</h1><br>
     <h3>Try to answer the following code related questions with the time limit.<br>
       Keep in mind that incorrect answers will penalize your scoretime by 10 seconds!
     </h3><br>
     <button type="button" id="startButton">Start Quiz</button>
     <div id="questions"></div>
-    <button id="option1"></button><br>
-    <button id="option2"></button><br>
-    <button id="option3"></button><br>
-    <button id="option4"></button><br>
+    <button id="option1" class="option"></button><br>
+    <button id="option2" class="option"></button><br>
+    <button id="option3" class="option"></button><br>
+    <button id="option4" class="option"></button><br>
+    <hr>
+  <div id="answerDisplay"></div>
   </div>
   <script src="./assets/script/script.js"></script>
 </body>

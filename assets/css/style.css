@@ -12,7 +12,7 @@ h1 {
     font-style: italic ;
 }
 
- .main-container {
+ #mainContainer {
    width: 80%;
   text-align: center;
   margin: auto;
@@ -29,16 +29,9 @@ h1 {
   top: 4px;
 }
 
-.highScore {
-  position: absolute;
-  top: 4px;
-  left: 20px;
-}
-
-#highScoreDisplay {
-  position: absolute;
-  top: 4px;
-  left: 150px;
+.option {
+  font-size: 20px ;
+  
 }
 
 

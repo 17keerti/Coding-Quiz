@@ -52,12 +52,13 @@ startButton.addEventListener("click", function () {
 
 function handleAnswerSelect(optionIndex) {
   if (optionIndex === selectedQuestion.answer) {
-    console.log("Answer is right");
+    // console.log("Answer is right");
     answerDisplay.textContent = "Right";
   } else {
     console.log("Wrong Answer");
     answerDisplay.textContent = "Wrong";
     timeLeft = timeLeft - 10;
+    time_left.textContent = "Time Left: " + timeLeft;
   }
   if (currentQuestionIndex !== remainingQuestionBank.length - 1) {
     displayNextQuestion();
@@ -160,11 +161,11 @@ function complete() {
       initials: initialAnswer,
       score: timeLeft
     };
-    var previousUserScores = JSON.parse(localStorage.getItem("userScores"));
-    localStorage.setItem("userScore", JSON.stringify(userScore));
-    if (previousUserScores == null) {
-      previousUserScores = [];
-    }
+    var previousUserScores = JSON.parse(localStorage.getItem("userScores")) || [];
+    // localStorage.setItem("userScore", JSON.stringify(userScore));
+    // if (previousUserScores == null) {
+    //   previousUserScores = [];
+    // }
     previousUserScores.push(userScore);
     localStorage.setItem("userScores", JSON.stringify(previousUserScores));
     highScore();
